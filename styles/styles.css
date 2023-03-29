@@ -16,14 +16,14 @@ h1, p {
   text-align: center;
 }
 
-input {
+input, textarea {
   width: 100%;
   background-color: #FFEBB4;
   font-size: 1em;
   margin: 10px;
 }
 
-#account-setup {
+#experience, #socials {
   text-align: left;
 }
 

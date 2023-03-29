@@ -13,8 +13,8 @@
   <p id="description">Thank you for taking the time to help us imrpove the platform.</p>
   <form id="survey-form" methond="post" action="mailto:galeriayrrah@gmail.com">
     <fieldset>
-      <label for="first-name">First Name:
-        <input name="first-name" id="first-name" type="text" placeholder="Input your first name here" required />
+      <label for="first-name" id="name-label">First Name:
+        <input name="first-name" id="name" type="text" placeholder="Input your first name here" required />
       </label>
       <label for="middle-name">Middle Name: (Optional)
         <input name="middle-name" id="middle-name" type="text" placeholder="Input your middle name here" required/>
@@ -22,16 +22,16 @@
       <label for="last-name">Last Name:
         <input name="last-name" id="last-name" type="text" placeholder="Input your last name here" required />
       </label>
-      <label for="email">Enter Your Email Address:
+      <label for="email" id="email-label">Enter Your Email Address:
         <input name="email" id="email" type="email" placeholder="Input your email here" required />
       </label>
-      <label for="age">Your Age:
-        <input name="age" id="age" type="number" min="13" max="100" placeholder="Age" required />
+      <label for="age" id="number-label">Your Age:
+        <input name="age" id="number" type="number" min="13" max="100" placeholder="Age" required />
       </label>
     </fieldset>
     <fieldset>
       <label for="referrer">How did you hear about us?
-        <select name="referrer" id="referrer">
+        <select name="referrer" id="dropdown">
           <option value="">(choose one)</option>
           <option value="1">Facebook</option>
           <option value="2">Ads</option>
@@ -40,29 +40,28 @@
         <p id="experience">How was your experience?</p>
       </label>
       <label for="good">
-        <input type="radio" name="account-type" id="good" class="inline">Good
+        <input type="radio" name="account-type" id="good" value="good" class="inline">Good
       </label>
       <label for="neutral">
-        <input type="radio" name="account-type" id="neutral" class="inline">Neutral
+        <input type="radio" name="account-type" id="neutral" value="neutral" class="inline">Neutral
       </label>
       <label for="bad">
-        <input type="radio" name="account-type" id="bad" class="inline">Bad
+        <input type="radio" name="account-type" id="bad" value="bad" class="inline">Bad
       </label>
+      <p id="socials">What Social Media do you use? (check all that applies)</p>
+      <label for="facebook">
+        <input type="checkbox" name="facebook" id="facebook" class="inline" value="facebook">Facebook
+      </label>
+      <label for="Twitter">
+        <input type="checkbox" name="twitter" id="twitter" class="inline" value="twitter">Twitter
+      </label>
+      <label for="instagram">
+        <input type="checkbox" name="instagram" id="instagram" class="inline" value="instagram">Instagram
+        <label for="comments">Provide a comment:
+          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Add additional comments here.."></textarea>
+        </label>
     </fieldset>
-    <fieldset>
-      <p id="account-setup">How was your experience?</p>
-      </label>
-      <label for="good">
-        <input type="radio" name="account-type" id="good" class="inline">Good
-      </label>
-      <label for="neutral">
-        <input type="radio" name="account-type" id="neutral" class="inline">Neutral
-      </label>
-      <label for="bad">
-        <input type="radio" name="account-type" id="bad" class="inline">Bad
-      </label>
-    </fieldset>
-    <input type="submit" value="submit">
+    <input type="submit" value="submit" id="submit">
   </form>
 </div>
 </body>
